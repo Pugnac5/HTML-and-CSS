@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icon").src = foto;
+    }
+
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQuan').value);
+        tot = qtd * 150;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+
+<body>
+    <style>
+        section {
+            display: block;
+            width: 1000px;
+            height: 800px;
+        }
+    </style>
+    <section>
+        <iframe id="icon" src="./Portfólios/PORTFOLIO-DOCENTE_instrucoes.pdf">
+    </section>
+    <nav id=" menu">
+
+        <h1>Menu Principal</h1>
+        <ul>
+            <li onclick="mudaFoto('./Portfólios/COMUM-ENG_GEOMETRIA-ANALÍTICA-E-ÁLGEBRA-LINEAR.pdf ')">Home
+            </li>
+            <li onclick="mudaFoto('./Portfólios/COMUM-ENG_Fundamentos.pdf')">
+                Especificações</li>
+            <li onclick="mudaFoto('./Portfólios/CÁLCULO-I _PORTD.png')">Fotos
+            </li>
+            <li onclick="mudaFoto('./img/Ga.png')">
+                Multimidias</li>
+            <li onclick="mudaPdf('./img/codes.png')">Fale
+                conosco</li>
+            </ol>
+    </nav>
+    <p> oiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiidfjndkvnidfnvidfjnvif</p>
+</body>
+
+</html>
